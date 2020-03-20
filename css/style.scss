@@ -1,0 +1,270 @@
+html p .title {
+  margin: 0px 0px 1rem 0px;
+  padding: 0px;
+}
+
+body {
+  overflow-x: hidden;
+  background: #afafaf;
+}
+
+.container-fluid {
+  margin: 0em;
+}
+
+.display-3 {
+  font-size: calc(56px + (72 - 56) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.display-4 {
+  font-size: calc(40px + (56 - 40) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.summary,
+.table td,
+.lead {
+  font-size: calc(16px + (20 - 16) * ((100vw - 300px) / (1600 - 300))) !important;
+}
+
+@media (max-width: 576px) {
+
+  .arrows,
+  #fixedbutton {
+    display: none;
+  }
+
+  .nav-item {
+    font-size: 0.8rem;
+  }
+
+  .container-fluid {
+    padding: 0em 1em 0em 1em;
+  }
+
+  #meme {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 576px) {
+  .container-fluid {
+    padding: 0em 2em 0em 2em;
+  }
+
+  #meme {
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding: 0em 3em 0em 3em;
+  }
+
+  #meme {
+    max-width: 40%;
+  }
+}
+
+@media (min-width: 992px) {
+  #meme {
+    max-width: 30%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container-fluid {
+    padding: 0em 4em 0em 4em;
+  }
+
+  #meme {
+    max-width: 30%;
+  }
+}
+
+.navbar {
+  font-weight: bold;
+  width: 100px;
+}
+
+.nav-link:hover {
+  color: #7c7c7d;
+}
+
+#fixedbutton {
+  font-size: .8em;
+  position: fixed;
+  bottom: 1em;
+  right: 2em;
+  z-index: 1;
+}
+
+.hideme {
+  opacity: 0;
+}
+
+/* title */
+.titleparallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../img/monterey.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+  position: relative;
+  z-index: 9;
+}
+
+/* 404 */
+.four04parallax {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../img/santa-cruz.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  min-height: 100vh;
+  position: relative;
+}
+
+
+.arrow-container {
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+  display: block;
+  background: transparent;
+  text-align: center;
+  width: auto;
+}
+
+.arrows path {
+  stroke: rgba(255, 255, 255, 0.6);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2.5s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0
+  }
+
+  40% {
+    opacity: 1
+  }
+
+  80% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
+  /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s;
+  /* Safari 和 Chrome */
+}
+
+.arrows,
+svg {
+  vertical-align: top;
+  width: 64px;
+  text-align: center;
+}
+
+.bottom {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  right: 25%;
+  left: 50%;
+  margin-left: -85px;
+  width: 170px;
+}
+
+#splashpage {
+  margin-top: 28vh;
+}
+
+.backgrade {
+  background-image: linear-gradient(#fafafa, #afafaf);
+}
+
+/* component heights */
+.section {
+  min-height: 100vh;
+}
+
+#meme {
+  /* width: auto; */
+  /* height: auto;s */
+  padding: 2px;
+  border: 2px solid black;
+}
+
+.table td {
+  font-weight: bold;
+  color: black;
+}
+
+a:link,
+a:visited,
+.projectlinks {
+  color: black;
+}
+
+.biolinks {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: calc(16px + (36 - 16) * ((100vw - 300px) / (1600 - 300)));
+  filter: invert(100%)
+}
+
+.biolinks:hover,
+a:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+.card-img-top {
+  padding: .5em 0em .5em 0em;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 2px 1px #444444;
+}
+
+.card-body-down {
+  /* margin-top: 100%; */
+}
+
+#footer {
+  text-align: center;
+  background-color: white;
+  border-radius: .25rem;
+  padding: 1.25rem;
+  /* margin: 1rem 15px 0px 15px; */
+  border: 1px solid rgba(0, 0, 0, .125);
+}
+
+#emailbtn {
+  text-align: center;
+  width: auto;
+}
+
+#copyright {
+  font-size: .8em;
+  margin-bottom: 1rem;
+  padding: 0px;
+}
